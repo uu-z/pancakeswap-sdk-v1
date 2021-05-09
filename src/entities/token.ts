@@ -61,14 +61,14 @@ export const WETH = {
     ChainId.MAINNET,
     '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
     18,
-    'WBNB',
-    'Wrapped BNB'
+    'WIOTX',
+    'Wrapped IOTX'
   ),
-  [ChainId.BSCTESTNET]: new Token(
-    ChainId.BSCTESTNET,
-    '0xaE8E19eFB41e7b96815649A6a60785e1fbA84C1e',
+  [ChainId.IOTEXTESTNET]: new Token(
+    ChainId.IOTEXTESTNET,
+    '0x5067c4B01E54cDB08D40ADf4b56BEaE7e8565E69',
     18,
-    'WBNB',
-    'Wrapped BNB'
+    'WIOTX',
+    'Wrapped IOTX'
   )
 }
