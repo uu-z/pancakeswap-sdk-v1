@@ -3,7 +3,7 @@ import { getNetwork } from '@ethersproject/networks'
 import { getDefaultProvider } from '@ethersproject/providers'
 import { TokenAmount } from './entities/fractions/tokenAmount'
 import { Pair } from './entities/pair'
-import IPancakePair from '@pancakeswap-libs/pancake-swap-core/build/IPancakePair.json'
+import IPancakePair from './abis/IPancakePair.json'
 import invariant from 'tiny-invariant'
 import ERC20 from './abis/ERC20.json'
 import { ChainId } from './constants'
@@ -11,8 +11,8 @@ import { Token } from './entities/token'
 
 let TOKEN_DECIMALS_CACHE: { [chainId: number]: { [address: string]: number } } = {
   [ChainId.MAINNET]: {
-    '0xE0B7927c4aF23765Cb51314A0E0521A9645F0E2A': 9 // DGD
-  }
+    '0xE0B7927c4aF23765Cb51314A0E0521A9645F0E2A': 9, // DGD
+  },
 }
 
 /**
@@ -47,8 +47,8 @@ export abstract class Fetcher {
               ...TOKEN_DECIMALS_CACHE,
               [chainId]: {
                 ...TOKEN_DECIMALS_CACHE?.[chainId],
-                [address]: decimals
-              }
+                [address]: decimals,
+              },
             }
             return decimals
           })

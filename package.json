@@ -1,7 +1,7 @@
 {
   "name": "@iotexproject/swap-sdk",
   "license": "MIT",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "🛠 An SDK for building applications on top of pancakeswap.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -23,7 +23,6 @@
     "prepublishOnly": "tsdx build"
   },
   "dependencies": {
-    "@pancakeswap-libs/pancake-swap-core": "^0.1.0",
     "big.js": "^5.2.2",
     "decimal.js-light": "^2.5.0",
     "jsbi": "^3.1.1",
