@@ -66,7 +66,7 @@ export const WETH = {
   ),
   [ChainId.IOTEXTESTNET]: new Token(
     ChainId.IOTEXTESTNET,
-    '0x62337DC46eE064e77696418a6d0Fd536C33FC695',
+    '0xff5fae9fe685b90841275e32c348dc4426190db0',
     18,
     'WIOTX',
     'Wrapped IOTX'

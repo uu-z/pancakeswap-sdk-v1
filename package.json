@@ -1,7 +1,7 @@
 {
   "name": "@iotexproject/swap-sdk",
   "license": "MIT",
-  "version": "1.0.7",
+  "version": "1.1.6",
   "description": "🛠 An SDK for building applications on top of pancakeswap.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
